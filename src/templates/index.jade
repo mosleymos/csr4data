@@ -2,61 +2,73 @@ doctype html
 html(lang="en")
   head
     title= CSR4DATA 
-    meta(name='author', content='')
-    meta(name='description', content='')
+    meta(name='author', content='Mori KEITA')
+    meta(name='description', content='human resources dataviz')
     meta(name='keywords', content='')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css')
     script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js')
     link(rel='stylesheet', href='css/site.css')
+    link(rel='stylesheet', href='css/win98.css')
     script(type='text/javascript', src='js/app.js')
   body(lang='fr-FR')
-
-    // Barre de navigation
-
-    div(class='navbar-fixed')
-      nav
-        div(class='nav-wrapper')
-          a(href='#', class='brand-logo') CSR4DATA 
-          ul(class='right hide-on-med-and-down')
-            li(class='')
-              a(href='#') Les visualisations 
-            li(class='')
-              a(href='#') Les articles 
-            li(class='')
-              a(href='#') A propos 
-
-    // Corps principal du site 
-
+    
+    // Corps principal du site
     div(class='container')
-      div(class='row')
-        div(class='col s12')
-          p(class='presentation') CSR 4 DATA est un site regroupant les informations et data sur un 
-      div(class='row')
-        div(class='col s6')
-          h3(class='') Nos nouvelles
-          a(href='#' class='news-link')
-            p $ernière news
-          a(href='#' class='news-link')
-            p $ernière news
-          a(href='#' class='news-link')
-            p $ernière news
 
-        div(class='col s6')
-          h3(class='text-centered') Nos Rubriques 
-          a(href='#' class='news-link')
-            p $ernière news
-          a(href='#' class='news-link')
-            p $ernière news
-          a(href='#' class='news-link')
-            p $ernière news
+      // Menu du site
+      div(class='row win98')
+        div(class='col s3')
+          div(class='block-centered')
+            div(class='menu')
+              div(class='menu-sidebar')
+                div(class='headline')
+                  strong MoriWinD 
+              ul(class='menu-content')
+                li(class='item folder')
+                  strong Visualisations 
+                  ul(class='menu-content')
+                    li(class='item') Visualisation lorem 
+                    li(class='item') Visualisation lorem 1
+                    li(class='item') Visualisation lorem 2 
+                    li(class='item') Visualisation lorem 3 
+                li(class='item folder')
+                  strong Rubriques 
+                  ul(class='menu-content')
+                    li(class='item') Rubrique lorem 
+                    li(class='item') Rubrique ipsum 
+                li(class='item folder')
+                  strong Articles 
+                  ul(class='menu-content')
+                    li(class='item') Article lorem 
+                    li(class='item') Article lorem2
+                    li(class='item') Article lorem2
+                    li(class='item') Article lorem2
+                li(class='item folder')
+                  strong A propos de nous 
+                  ul(class='menu-content')
+                    li(class='item') L'équipe 
+                    li(class='item') Nous contacter 
 
-    // Footer
-    //footer(class='page-footer')
-    //  div(class='container')
-    //    div(class='row')
-    //      div(class='col 16 s12')
-    //        h5(class='white-text')
+        // Affichage principal
+        div(class='col s9')
+          div(class='window')
+            div(class='header')
+              Article
+            div(class='content') 
+              article(class='windows-info')
+                h4 Titre de l'article
+                p Texte de l'article Lorem ipsum
+                p Texte de l'article Lorem ipsum 2
+          div(class='loader')
 
+            // Fenêtre de bienvenue
+            div(class='window')
+              div(class='header')
+                Accueil
+              div(class='content')
+                h3 Bienvenue sur CSR 4 DATA Meilleur site de travail sur la data des ressources humaines
+                p notre site est un site d'informations sur les ressources humaines Nous vous souhaitons la bienvenue n'hesitez pas à faire part de vos impressions Nous vous souhaitons une bonne visite
+                button Lancer l'application 

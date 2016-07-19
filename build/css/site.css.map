@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,MAAO;EACL,MAAM,EAAE,aAAa;;ACDvB,UAAW;EACT,OAAO,EAAE,KAAK;EACd,WAAW,EAAC,GAAG;EACf,cAAc,EAAC,GAAG;EAElB,UAAU,EAAC,KAAK;EAChB,aAAa,EAAC,KAAK;EAEnB,gBAAgB,EAAC,IAAI;;ACRvB,aAAc;EACZ,SAAS,EAAC,GAAG",
-"sources": ["../../src/css/base/debug.scss","../../src/css/components/news-link.scss","../../src/css/components/presentation.scss"],
-"names": [],
-"file": "site.css"
-}
