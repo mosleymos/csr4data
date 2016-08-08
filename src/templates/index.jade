@@ -1,13 +1,10 @@
 doctype html
 html(lang="en")
-  include base/header.jade
+  include base/header2.jade
   body(lang='fr-FR' class='win98')
-    div(class='container')
+    div(class='container-fluid')
       div(class='row')
-        div(class='col-md-3 col-xs-3 col-sm-3')
-          div(class='navigation-organisation')
-            include components/menu.jade
-          div(class='col-md-offset-5 col-xs-9 col-sm-9')
-            include components/accueil.jade
-            include components/article.jade
-            include components/about.jade
+        div(class='col-xs-12 col-md-3')
+          include blog/menu.jade
+        div(class='col-xs-12 col-md-9')
+          include blog/info_site.jade
