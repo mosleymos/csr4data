@@ -1,0 +1,40 @@
+.navigation-logo {
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+  width: 15%;
+  
+  padding-top: 1em;
+  padding-bottom: 1em;
+  
+  position: static;
+  
+  border-radius: 15px;
+  
+  box-shadow: 10px 10px 20px #888888
+}
+
+.navigation-links {
+   list-style-type: none;
+}
+
+.nav-link {
+  float: left;
+  position: inline;
+  
+  margin-right: 1em;
+  
+  padding-top: .25em;
+  padding-bottom:.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+  
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: black;
+  color:white;
+}

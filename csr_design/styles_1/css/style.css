@@ -1,0 +1,23 @@
+.debug {
+  border: 2px solid red;
+}
+
+.about-writer {
+  
+}
+
+.about-writer-picture {
+  
+  padding: 1.5em;
+  width: 380px;
+  height:200px;
+  border: 4px solid grey;
+  background-color:black;
+}
+
+.about-writer-biography {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  width: 75%;
+}
