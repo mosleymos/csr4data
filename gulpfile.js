@@ -111,7 +111,11 @@ return del([
 gulp.task('watch', function(){
   gulp.watch(['./src/js/*.js'], ['clean:js','browserify','uglify']);
   gulp.watch(['./src/css/*.scss'], ['clean:css','scss','clean-css']);
-  gulp.watch(['./src/templates/*.jade'], ['jade']);
+  gulp.watch([
+    './src/templates/*.jade',
+    './src/templates/base/*.jade',
+    './src/templates/components/*.jade'
+  ], ['jade']);
 })
 
 gulp.task('default', ['watch']);
