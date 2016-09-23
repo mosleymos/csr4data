@@ -1,0 +1,265 @@
+.csr-data-navigation {
+  display:flex;
+}
+
+.csr-data-navigation-links {
+	text-decoration:none;
+	list-style-type: none;
+
+	padding: 1em;
+	margin: 1em;
+
+}
+
+.csr-data-navigation-links:hover {
+	list-style-type: square;
+}
+
+.csr-data-h1 {
+
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: .5em;
+	padding-top:.5em;
+
+	margin-left: .2em;
+	margin-right: .2em;
+
+	color: white;
+	background-color: black;
+
+}
+
+.csr-data-h2 {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: .5em;
+	padding-top:.5em;
+
+	margin-left: .2em;
+	margin-right: .2em;
+
+	color: white;
+	background-color: black;
+
+}
+
+.csr-data-h3 {
+
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: .5em;
+	padding-top:.5em;
+
+	margin-left: .2em;
+	margin-right: .2em;
+
+	color: white;
+	background-color: black;
+}
+
+
+.csr-data-h4 {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: .5em;
+	padding-top:.5em;
+
+	margin-left: .2em;
+	margin-right: .2em;
+
+	color: white;
+	background-color: black;
+}
+
+
+.csr-data-h5 {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: .5em;
+	padding-top:.5em;
+
+	margin-left: .2em;
+	margin-right: .2em;
+
+	color: white;
+	background-color: black;
+}
+
+
+.animated-rubrique:hover {
+	color:black;
+	background-color:white;
+}
+
+.csr-data-hr-long-separator {
+	color: black;
+	width: 50%;
+	border: 2px solid black;
+}
+
+.csr-data-hr-short-separator {
+	color: black;
+	width: 10%;
+	border: 4px solid black;
+}
+
+
+/*
+	Create square glyph
+*/
+.csr-data-square-glyph {
+color: black;
+background-color: black;
+
+border: 2px color black;
+padding: 2px 8px ;
+
+height: 10px ;
+width: 5px;
+
+}
+
+.csr-data-paragraph {
+text-indent: 1.5em;
+text-align:justify;
+font-size: 20px;
+
+padding: 1em auto;
+margin: 1em auto;
+
+width: 80%;
+}
+
+.csr-data-image {
+border: 1.15em solid black;
+}
+
+.csr-data-information-note {
+border: .3em solid black;
+font-size: 2em;
+text-align: center;
+text-transform: uppercase;
+width: 50%;
+
+margin: 1em auto;
+
+color: white;
+background-color: black;
+}
+
+.csr-data-link {
+font-size: 2em;
+text-decoration:none;
+text-transform:capitalize;
+color:black;
+}
+
+.csr-data-synthesis{
+padding: 1em auto;
+margin: 1em auto;
+width: 40%;
+
+text-align:center;
+}
+.csr-data-synthesis-title > h4{
+padding: 1em auto;
+margin: 1em auto;
+width: 30%;
+
+font-size: 1.5em;
+}
+
+.csr-data-author {
+padding: 1em;
+border: 1px solid black;
+width: 20%;
+}
+
+.csr-data-author-identity {
+text-transform: capitalize;
+}
+
+.csr-data-math-formula {
+/*
+Trouver une solution pour
+le border radius
+Formule en h
+*/
+border: 1px solid black;
+
+padding-left: 1em;
+
+color: black;
+background-color: white;
+
+width: 50%;
+}
+
+/*
+Styles provenant d'essais
+effectués
+*/
+
+.csr-data-articles-display{
+text-align:center;
+padding: 2em auto;
+margin: 2em auto;
+
+width: 70%;
+}
+
+.csr-data-articles-list {
+list-style-type: none;
+}
+
+.csr-data-article-title {
+font-size: 2em;
+margin-top: 0;
+
+background-color: black;
+color: white;
+}
+
+.csr-data-article-homepage-display {
+margin-top: 13px;
+margin-bottom: 13px;
+
+padding-bottom: 1em;
+
+border: 1px solid black;
+}
+
+.csr-data-learn-more {
+text-decoration:none;
+
+background-color: white;
+color: black;
+
+padding: .5em .5em;
+
+border: 1px solid black;
+border-radius: 12px;
+}
+
+.csr-data-learn-more:hover {
+background-color: black;
+color: white;
+}
+
+.csr-data-about {
+padding: 1em auto;
+margin: 1em auto;
+width:50%;
+
+}
+
+.csr-data-contributor-identity {
+
+}
+
+.csr-data-contributor-biography {
+  font-size: 2.5em;
+  color: white;
+  background-color: black;
+}

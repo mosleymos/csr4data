@@ -1,10 +1,7 @@
 doctype html
 html(lang="en")
-  include base/header2.jade
-  body(lang='fr-FR' class='win98')
-    div(class='container-fluid')
-      div(class='row')
-        div(class='col-xs-12 col-md-3')
-          include blog/menu.jade
-        div(class='col-xs-12 col-md-9')
-          include blog/info_site.jade
+  include base/csr_data_header.jade
+  body(lang='fr-FR')
+    include base/csr_data_navigation.jade
+    include components/csr_data_articles_list.jade
+    include components/csr_data_article.jade
