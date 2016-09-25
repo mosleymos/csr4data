@@ -2,6 +2,8 @@ doctype html
 html(lang="en")
   include base/csr_data_header.jade
   body(lang='fr-FR')
-    include base/csr_data_navigation.jade
-    include components/csr_data_articles_list.jade
-    include components/csr_data_article.jade
+    div(class='container')
+      include base/csr_data_navigation.jade
+      include components/csr_data_articles_list.jade
+      include components/csr_data_article.jade
+      include components/csr_data_about.jade
