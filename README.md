@@ -15,12 +15,8 @@ Ouvrir le navigateur sur localhost:8000
 
 ### TODO
 
-- [ ] Include Dataviz
 - [ ] Page mentions légales a faire
-- [ ] Ajouter légendes sous images
-- [ ] Ajouter dataviz exemple
 - [ ] Ajouter background
-- [ ] Corriger le square glyphe
 - [ ] Installation de bootstrap en paquet
 - [ ] Capitalize first letter paragraph
 - [ ] Waitjs a installer
@@ -28,9 +24,13 @@ Ouvrir le navigateur sur localhost:8000
 
 ### DOING
 
-- [ ] Ajouter style page about
+- [ ] Include Dataviz and style
+- [ ] Ajouter dataviz exemple
 
 ### DONE
 
 - [x] Add an editorconfig
 - [x] Feuille de style
+- [x] Ajouter style page about - a propos
+- [x] Ajouter légendes sous images
+- [x] Corriger le square glyphe
