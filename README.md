@@ -1,5 +1,5 @@
 CSR DATA
-======
+========
 
 Simple Work in progress about a site about data visualization
 
@@ -15,6 +15,7 @@ Ouvrir le navigateur sur localhost:8000
 
 ### TODO
 
+- [ ] Modifier gulpfile pour qu'il soit plus efficace
 - [ ] Page mentions légales a faire
 - [ ] Ajouter et travailler sur background
 - [ ] Installation de bootstrap en paquet
@@ -22,13 +23,16 @@ Ouvrir le navigateur sur localhost:8000
 - [ ] Waitjs a installer
 - [ ] Trait de titre ?  Idée à creuser
 - [ ] Faire un rendu separé de chaque page
-- [ ] Améliorer le css pour qu'il soit plus adaptatif
-- [ ] Créer un logo
+- [ ] Améliorer le css pour qu'il soit plus adaptatif alors utiliser sass
+- [ ] Ajouter navigation peut être user de pagejs
+- [ ] Ajouter gestion du dom peut être user de jquery - point à penser
+- [ ] Enlever webpack des dépendances du package.json
 
 ### DOING
 
 - [ ] Include Dataviz and style
 - [ ] Ajouter dataviz exemple
+- [ ] Créer un logo
 
 ### DONE
 
