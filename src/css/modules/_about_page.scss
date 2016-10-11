@@ -1,0 +1,46 @@
+/*
+   About page styles
+*/
+.csr-data-contributor-biography {
+  font-size: 2.5em;
+  color: white;
+  background-color: black;
+}
+
+.csr-data-contributor-identity {
+
+}
+
+
+.csr-data-learn-more:hover {
+background-color: black;
+color: white;
+}
+
+.csr-data-about {
+padding: 1em auto;
+margin: 1em auto;
+width:50%;
+
+}
+
+.csr-data-learn-more {
+text-decoration:none;
+
+background-color: white;
+color: black;
+
+padding: .5em .5em;
+
+border: 1px solid black;
+border-radius: 12px;
+}
+.csr-data-short-text-image {
+  display: block;
+  padding: 1em;
+}
+
+.csr-data-author-identity {
+  text-transform: capitalize;
+}
+
