@@ -1,25 +1,27 @@
+/*
+
+   navbar bootstrap mise à zero
+   StackOverflow à consulter sur le theme
+   http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
+
+*/
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+
 .csr-data-navigation {
-
   display:flex;
-
 }
 
 .csr-data-navigation-links {
+  text-decoration:none;
+  list-style-type: none;
 
- text-decoration:none;
-
- list-style-type: none;
-
-
-
- padding: 1em;
-
- margin: 1em;
-
+  padding: 1em;
+  margin: 1em;
 }
 
 .csr-data-navigation-links:hover {
-
- list-style-type: square;
-
+  list-style-type: square;
 }
