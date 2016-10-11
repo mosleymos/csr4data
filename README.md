@@ -1,38 +1,44 @@
 CSR DATA
 ========
 
+![alt tag](http://github.com/mosleymos/csr_data/csr_data_logo.png)
+
 Simple Work in progress about a site about data visualization
+
+Le site est statique
+- Les sources sont dans le dossier src
+- Le rendu dev est dans le dossier dist
+- Le rendu final est dans le dossier build
 
 Lancer le serveur
 
 ```
 
-gulp webserver
+gulp watch
 
 ```
 
-Ouvrir le navigateur sur localhost:8000
+Ouvrir le navigateur sur localhost:3000
 
 ### TODO
 
-- [ ] Modifier gulpfile pour qu'il soit plus efficace
 - [ ] Page mentions légales a faire
 - [ ] Ajouter et travailler sur background
 - [ ] Installation de bootstrap en paquet
 - [ ] Capitalize first letter paragraph
-- [ ] Waitjs a installer
 - [ ] Trait de titre ?  Idée à creuser
-- [ ] Faire un rendu separé de chaque page
-- [ ] Améliorer le css pour qu'il soit plus adaptatif alors utiliser sass
 - [ ] Ajouter navigation peut être user de pagejs
 - [ ] Ajouter gestion du dom peut être user de jquery - point à penser
-- [ ] Enlever webpack des dépendances du package.json
+- [ ] Ajouter un footer
 
 ### DOING
 
+- [ ] Travail sur la navigation
 - [ ] Include Dataviz and style
 - [ ] Ajouter dataviz exemple
-- [ ] Créer un logo
+- [ ] Waitjs a installer
+- [ ] Refonte de la navigation
+- [ ] Faire un rendu separé de chaque page
 
 ### DONE
 
@@ -41,9 +47,22 @@ Ouvrir le navigateur sur localhost:8000
 - [x] Ajouter style page about - a propos
 - [x] Ajouter légendes sous images
 - [x] Corriger le square glyphe
+- [x] Modifier gulpfile pour qu'il soit plus efficace
+- [x] Créer un logo
+- [x] Améliorer le css pour qu'il soit plus adaptatif alors utiliser sass
+- [x] Enlever webpack des dépendances du package.json
 
 ### Extra notes
+
 Article Viget intéressant sur
 [gulpfiles](https://www.viget.com/articles/gulp-browserify-starter-faq)
 
 Usage gulp et browsersync [browsersync](https://www.browsersync.io/docs/gulp/)
+
+Rester simple => pas de page.js - page html individuelles
+
+La page nous rejoindre devrait elle pas être incluse dans a propos
+
+### Idées
+
+- Remplacer le D de data par Delta pour le design ?
