@@ -10,52 +10,46 @@ var plumber     = require('gulp-plumber')            // Not stop the stream
 var livereload  = require('gulp-livereload');
 var webserver   = require('gulp-webserver');         // Webserver for Gulp
 var del         = require('del');                    // Delete file or folder
-
-// Ne fonctionne pas sur mon système
-//var jsHint = require('gulp-jshint');
+var autoprefixer = require('gulp-autoprefixer');
+var cssnano = require('gulp-cssnano');
+var notify  = require('gulp-notify');
+var jshint  = require('gulp-jshint');
+var browserSync = require('browser-sync').create();
 
 var LOCALS = {};
 var log = function(something){ return console.log(something); }
+var scssFile = 'src/css/csr_data.scss';
+var jadeFiles = 'src/templates/*.jade';
+var jsFiles = 'src/js/*.js';
 
-// Maybe no need
-var paths = {
-  src: [
-        './src/js/*.js', 
-        './src/templates/*.jade',
-        './src/css/*.scss'
-  ]
-}
-
-// Compile jade to  HTML files
-gulp.task('jade', function(){
-   gulp.src('./src/templates/*.jade')
-    .pipe(plumber())
-    .pipe(jade({
-       locals: LOCALS 
-    }))
-    .pipe(gulp.dest('./build/'))
+browserSync.init({
+  server: './dist/'
 });
 
-// Compile scss to css file
-gulp.task('scss', function(){
-   sass('./src/css/*.scss')
-      .on('error', sass.logError)
-      .pipe(plumber())
-      .pipe(gulp.dest('./build/css/'))
+// $ gulp build
+// Build construction du site pour export réel
+
+
+// Building js
+// 0 - clean des files dans src et dist
+// 1 - check files
+// 2 - Browserify app.js
+// 3 - export app.js dans le dist
+// 4 - minify app.js dans le dist
+
+//$ gulp clean
+gulp.task('clean', function() {
+  return del(['dist/js/*.js', 'dist/img/']);
 });
 
-// Minify css
-gulp.task('clean-css', function(){
-   gulp.src('./build/css/*.css')
-     .pipe(plumber())
-     .pipe(cleanCSS({compatibility:'ie8'}))
-     .pipe(rename(function(path){
-       path.basename += '-min';
-     }))
-     .pipe(gulp.dest('./build/css/'))
-})
+//$ gulp js:check
+gulp.task('js:check', function() {
+  return gulp.src(jsFiles)
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter('default'))
+});
 
-// Browserify file to js 
+// Browserify file to js
 // good snippet I think. Here the source
 // https://www.viget.com/articles/gulp-browserify-starter-faq
 gulp.task('browserify', function(){
@@ -65,58 +59,67 @@ gulp.task('browserify', function(){
                log("ERREUR au niveau de la compilation JS");
             })
             .pipe(source('app.js'))
-            .pipe(gulp.dest('./build/js/'))
+            .pipe(gulp.dest('./dist/js/'))
+            .pipe(notify({ message: 'browerify task complete' }));
 });
 
-// Uglify js files
-gulp.task('uglify', function(){
-         gulp.src('./build/js/*.js')
+//$ gulp scripts
+// Construction et compilation du javascript
+// usage de browserify on a un fichier app.min.js
+gulp.task('scripts',['clean','js:check', 'browserify'], function() {
+    return gulp.src('./dist/js/*.js')
            .pipe(plumber())
            .pipe(uglify())
            .pipe(rename(function(path){
-              path.basename += '-min';
+              path.basename += '.min';
            }))
-           .pipe(gulp.dest('./build/js/'))
-})
-
-// A sort of gulp webserver
-
-gulp.task('webserver', function(){
-   gulp.src('./build/')
-   .pipe(webserver({
-       livereload:true,
-       directoryListing:false,
-       open:true,
-       host:'127.0.0.1',
-       port: 8000
-   }))
-})
+           .pipe(gulp.dest('./dist/js/'))
+           .pipe(notify({ message: 'scripts task complete' }));
+});
 
 
-// Clean build js folder
-gulp.task('clean:js', function(){
-return del([
-      './build/js/*.js'
-  ]);
-})
+//$ gulp styles
+// Construction et compilation du css
+gulp.task('styles', function() {
+  return sass(scssFile, { style: 'expanded' })
+    .pipe(autoprefixer('last 2 version'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(cssnano())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(notify({ message: 'Styles task complete' }));
+});
 
-// Clean build css folder
-gulp.task('clean:css', function(){
-return del([
-      './build/css/*.css'
-  ]);
-})
 
-// Rerun a task when a file change
-gulp.task('watch', function(){
-  gulp.watch(['./src/js/*.js'], ['clean:js','browserify','uglify']);
-  gulp.watch(['./src/css/*.scss'], ['clean:css','scss','clean-css']);
-  gulp.watch([
-    './src/templates/*.jade',
-    './src/templates/base/*.jade',
-    './src/templates/components/*.jade'
-  ], ['jade']);
-})
+//$ gulp jade
+// Construction et compilation du html
+gulp.task('jade', function(){
+   gulp.src(jadeFiles)
+    .pipe(plumber())
+    .pipe(jade({
+       locals: LOCALS
+    }))
+    .pipe(gulp.dest('./dist/'))
+});
 
-gulp.task('default', ['watch']);
-// All tasks HTML compilation, js and css
+
+// $ gulp watch
+// Browser-sync pour développement
+
+// Watch
+gulp.task('watch', function() {
+
+  // Watch .jade files
+  gulp.watch('src/templates/*.jade', ['jade']);
+
+  // Watch .scss files
+  gulp.watch('src/css/*.scss', ['styles']);
+
+  // Watch .js files
+  gulp.watch('src/js/*.js', ['scripts']);
+
+  // Watch dist files and reload server
+  gulp.watch('dist/js/*.js').on('change', browserSync.reload)
+  gulp.watch('dist/css/*.css').on('change', browserSync.reload)
+  gulp.watch('dist/*.html').on('change', browserSync.reload)
+});
