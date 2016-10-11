@@ -41,3 +41,9 @@ Ouvrir le navigateur sur localhost:8000
 - [x] Ajouter style page about - a propos
 - [x] Ajouter légendes sous images
 - [x] Corriger le square glyphe
+
+### Extra notes
+Article Viget intéressant sur
+[gulpfiles](https://www.viget.com/articles/gulp-browserify-starter-faq)
+
+Usage gulp et browsersync [browsersync](https://www.browsersync.io/docs/gulp/)
