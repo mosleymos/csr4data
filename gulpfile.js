@@ -28,7 +28,7 @@ browserSync.init({
 
 // $ gulp build
 // Build construction du site pour export réel
-
+//TODO: Créer la task elle genere le site dans le dossier build/
 
 // Building js
 // 0 - clean des files dans src et dist
@@ -39,7 +39,7 @@ browserSync.init({
 
 //$ gulp clean
 gulp.task('clean', function() {
-  return del(['dist/js/*.js', 'dist/css/*.css', 'dist/img/']);
+  return del(['dist/js/*.js', 'dist/css/*.css']);
 });
 
 //$ gulp js:check
