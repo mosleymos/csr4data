@@ -39,7 +39,7 @@ browserSync.init({
 
 //$ gulp clean
 gulp.task('clean', function() {
-  return del(['dist/js/*.js', 'dist/img/']);
+  return del(['dist/js/*.js', 'dist/css/*.css', 'dist/img/']);
 });
 
 //$ gulp js:check
@@ -80,7 +80,7 @@ gulp.task('scripts',['clean','js:check', 'browserify'], function() {
 
 //$ gulp styles
 // Construction et compilation du css
-gulp.task('styles', function() {
+gulp.task('styles', ['clean'],function() {
   return sass(scssFile, { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('dist/css'))
