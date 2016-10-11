@@ -1,8 +1,5 @@
-CSR DATA
-========
-
-![alt tag](http://github.com/mosleymos/csr_data/csr_data_logo.png)
-
+![alt tag](https://github.com/mosleymos/csr4data/blob/master/csr_data_logo.png?raw=true)
+====
 Simple Work in progress about a site about data visualization
 
 Le site est statique
