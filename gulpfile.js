@@ -18,7 +18,7 @@ var browserSync = require('browser-sync').create();
 
 var LOCALS = {};
 var log = function(something){ return console.log(something); }
-var scssFile = 'src/css/csr_data.scss';
+var scssFile = 'src/css/*.scss';
 var jadeFiles = 'src/templates/*.jade';
 var jsFiles = 'src/js/*.js';
 
