@@ -1,10 +1,15 @@
 @charset "UTF-8";
 body {
   padding-bottom: 75px;
+  background-color: white;
 }
 
 .container {
   padding-top: 1em;
+}
+
+.debug {
+  border: 4px solid red;
 }
 
 .csr-data-h1 {
@@ -60,6 +65,16 @@ body {
   margin-right: .2em;
   color: white;
   background-color: black;
+}
+
+/*
+   Links
+*/
+.csr-data-link {
+  font-size: 2em;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
 }
 
 /*
@@ -230,16 +245,6 @@ img.csr-data-logo {
   margin: 1em auto;
   width: 30%;
   font-size: 1.5em;
-}
-
-/*
-   Links
-*/
-.csr-data-link {
-  font-size: 2em;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: black;
 }
 
 /*
