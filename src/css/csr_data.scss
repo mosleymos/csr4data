@@ -1,12 +1,7 @@
-body {
-  padding-bottom: 75px;
-}
+@import 'base/base';
+@import 'base/text';
+@import 'base/links';
 
-.container {
-  padding-top: 1em;
-}
-
-@import 'modules/text';
 @import 'modules/navigation';
 @import 'modules/about_page';
 @import 'modules/animated';
@@ -14,6 +9,5 @@ body {
 @import 'modules/images';
 @import 'modules/paragraphs';
 @import 'modules/articles';
-@import 'modules/links';
 @import 'modules/others';
 
