@@ -27,6 +27,7 @@ Ouvrir le navigateur sur localhost:3000
 - [ ] Ajouter navigation peut être user de pagejs
 - [ ] Ajouter gestion du dom peut être user de jquery - point à penser
 - [ ] Ajouter un footer
+- [ ] Enlever les fichier non utilisés css html etc...
 
 ### DOING
 
