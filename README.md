@@ -26,20 +26,21 @@ Ouvrir le navigateur sur localhost:3000
 - [ ] Trait de titre ?  Idée à creuser
 - [ ] Ajouter navigation peut être user de pagejs
 - [ ] Ajouter gestion du dom peut être user de jquery - point à penser
-- [ ] Ajouter un footer
-- [ ] Enlever les fichier non utilisés css html etc...
 
 ### DOING
 
-- [ ] Travail sur la navigation
 - [ ] Include Dataviz and style
 - [ ] Ajouter dataviz exemple
 - [ ] Waitjs a installer
 - [ ] Refonte de la navigation
-- [ ] Faire un rendu separé de chaque page
 
 ### DONE
 
+- [x] Installation de normalize.css en paquet
+- [xj Enlever les fichier non utilisés css html etc...
+- [x] Ajouter un footer
+- [x] Travail sur la navigation
+- [x] Faire un rendu separé de chaque page
 - [x] Add an editorconfig
 - [x] Feuille de style
 - [x] Ajouter style page about - a propos
