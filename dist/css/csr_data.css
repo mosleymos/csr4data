@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
-  padding-bottom: 75px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   background-color: white;
 }
 
@@ -180,6 +181,7 @@ body {
 img.csr-data-logo {
   height: 54px;
   width: 500px;
+  background-color: white;
 }
 
 /*
@@ -308,4 +310,21 @@ effectués
   position: fixed;
   bottom: 0;
   margin: 10px 0;
+}
+
+.footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: black;
+}
+
+.csr-data-footer {
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: right;
+  color: white;
+}
+
+.csr-data-footer:hover {
+  color: white;
 }
