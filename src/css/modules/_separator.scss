@@ -3,14 +3,14 @@
 */
 
 .csr-data-hr-long-separator {
-	color: black;
+	color: $csr_data_first_color;
 	width: 50%;
-	border: 2px solid black;
+	border: 2px solid $csr_data_first_color;
 }
 
 .csr-data-hr-short-separator {
-	color: black;
+	color: $csr_data_first_color;
 	width: 10%;
-	border: 4px solid black;
+	border: 4px solid $csr_data_first_color;
 }
 

@@ -17,8 +17,8 @@ list-style-type: none;
 font-size: 2em;
 margin-top: 0;
 
-background-color: black;
-color: white;
+background-color: $csr_data_first_color;
+color: $csr_data_second_color;
 }
 
 .csr-data-article-homepage-display {
@@ -27,11 +27,11 @@ margin-bottom: 13px;
 
 padding-bottom: 1em;
 
-border: 1px solid black;
+border: 1px solid $csr_data_first_color;
 }
 
 .csr-data-information-note {
-border: .3em solid black;
+border: .3em solid $csr_data_first_color;
 font-size: 2em;
 text-align: center;
 text-transform: uppercase;
@@ -39,8 +39,8 @@ width: 50%;
 
 margin: 1em auto;
 
-color: white;
-background-color: black;
+color: $csr_data_second_color;
+background-color: $csr_data_first_color;
 }
 
 .csr-data-synthesis{

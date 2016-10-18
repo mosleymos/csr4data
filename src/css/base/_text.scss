@@ -1,3 +1,10 @@
+@mixin basic-font-color() {
+	color: $csr_data_second_color;
+	background-color: $csr_data_first_color;
+
+	margin-left: .2em;
+	margin-right: .2em;
+}
 .csr-data-h1 {
 
 	padding-left: 1em;
@@ -5,12 +12,8 @@
 	padding-bottom: .5em;
 	padding-top:.5em;
 
-	margin-left: .2em;
-	margin-right: .2em;
 
-	color: white;
-	background-color: black;
-
+  @include basic-font-color ;
 }
 
 .csr-data-h2 {
@@ -19,11 +22,7 @@
 	padding-bottom: .5em;
 	padding-top:.5em;
 
-	margin-left: .2em;
-	margin-right: .2em;
-
-	color: white;
-	background-color: black;
+  @include basic-font-color ;
 
 }
 
@@ -34,11 +33,7 @@
 	padding-bottom: .5em;
 	padding-top:.5em;
 
-	margin-left: .2em;
-	margin-right: .2em;
-
-	color: white;
-	background-color: black;
+  @include basic-font-color ;
 }
 
 
@@ -48,11 +43,7 @@
 	padding-bottom: .5em;
 	padding-top:.5em;
 
-	margin-left: .2em;
-	margin-right: .2em;
-
-	color: white;
-	background-color: black;
+  @include basic-font-color ;
 }
 
 
@@ -62,12 +53,6 @@
 	padding-bottom: .5em;
 	padding-top:.5em;
 
-	margin-left: .2em;
-	margin-right: .2em;
-
-	color: white;
-	background-color: black;
+  @include basic-font-color ;
 }
-
-
 
