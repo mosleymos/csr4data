@@ -1,58 +1,52 @@
-@mixin basic-font-color() {
+@mixin csr_data_basic_title(){
 	color: $csr_data_second_color;
 	background-color: $csr_data_first_color;
 
 	margin-left: .2em;
 	margin-right: .2em;
 }
+
+@mixin csr_data_basic_padding($left, $right, $bottom, $top){
+  padding-left: $left;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-top: $top;
+}
+
+
 .csr-data-h1 {
 
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom: .5em;
-	padding-top:.5em;
+  @include csr_data_basic_title() ;
+  @include csr_data_basic_padding(1em, 1em, .5em, .5em);
 
-
-  @include basic-font-color ;
 }
 
 .csr-data-h2 {
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom: .5em;
-	padding-top:.5em;
 
-  @include basic-font-color ;
+  @include csr_data_basic_title() ;
+  @include csr_data_basic_padding(1em, 1em, .5em, .5em);
 
 }
 
 .csr-data-h3 {
 
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom: .5em;
-	padding-top:.5em;
+  @include csr_data_basic_title() ;
+  @include csr_data_basic_padding(1em, 1em, .5em, .5em);
 
-  @include basic-font-color ;
 }
 
 
 .csr-data-h4 {
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom: .5em;
-	padding-top:.5em;
 
-  @include basic-font-color ;
+  @include csr_data_basic_title() ;
+  @include csr_data_basic_padding(1em, 1em, .5em, .5em);
+
 }
 
 
 .csr-data-h5 {
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom: .5em;
-	padding-top:.5em;
 
-  @include basic-font-color ;
+  @include csr_data_basic_title() ;
+  @include csr_data_basic_padding(1em, 1em, .5em, .5em);
+
 }
-
