@@ -19,6 +19,7 @@ Ouvrir le navigateur sur localhost:3000
 
 ### TODO
 
+- [ ] Déterminer les metas keywords author ...
 - [ ] Page mentions légales a faire
 - [ ] Ajouter et travailler sur background
 - [ ] Installation de bootstrap en paquet
