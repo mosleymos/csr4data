@@ -1,8 +1,14 @@
 import nav from './nav';
-import { top, bottom } from './footer';
+import { footer } from './footer';
 
 import { makeButton } from './button';
 
 import { red, blue, makeColorStyle } from './button-styles';
 
-console.log(nav(), top, bottom, makeButton('my first button'), makeColorStyle("mustard"))
+var button = makeButton('yeah my first button')
+button.style =makeColorStyle("green")
+document.body.appendChild(button)
+document.body.appendChild(footer)
+
+
+console.log(nav(), footer )
