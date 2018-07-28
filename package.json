@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "dev":"yarn run webpack -- --mode development",
-    "prod":"yarn run webpack -- --mode production"
+    "prod":"yarn run webpack -- --mode production",
+    "debug":"yarn run webpack -- --inspect --debug",
+    "dev:debug":"yarn run debug -- --mode development",
+    "debugthis":"node --inspect --inspect-brk ./src/index.js"
   },
   "author": "KEITA Mori",
   "license": "ISC",
