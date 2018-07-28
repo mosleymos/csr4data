@@ -4,7 +4,10 @@
   "description": "simple site to help HR in enterprises",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "./node_modules/webpack/bin/webpack.js",
+    "dev":"yarn run webpack -- --mode development",
+    "prod":"yarn run webpack -- --mode production"
   },
   "author": "KEITA Mori",
   "license": "ISC",
@@ -34,9 +37,11 @@
     "jquery": "^3.1.0",
     "jshint": "^2.9.3",
     "please-wait": "0.0.5",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "webpack-command": "^0.4.1"
   },
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "webpack": "^4.16.3"
   }
 }
