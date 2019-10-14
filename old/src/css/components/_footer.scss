@@ -1,0 +1,15 @@
+.footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: $csr_data_first_color;
+}
+
+.csr-data-footer {
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align:right;
+  color: $csr_data_second_color;
+}
+.csr-data-footer:hover {
+  color: $csr_data_second_color;
+}
