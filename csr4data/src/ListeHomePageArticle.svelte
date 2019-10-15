@@ -7,6 +7,7 @@
   ]
 </script>
 
+<h1>Articles</h1>
 {#each articles as article }
   <HomePageArticle article={article} />
 {/each}

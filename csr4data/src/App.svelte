@@ -33,6 +33,19 @@
 </script>
 
 <Header/>
-<ListeHomePageArticles/>
-<About/>
+<div id="list_articles">
+  <ListeHomePageArticles/>
+</div>
+<div id="about_time">
+  <About/>
+</div>
 <Footer/>
+
+<style>
+ #about_time{
+  visibility: hidden;
+}
+ #list_articles{
+  visibility: hidden;
+}
+</style>

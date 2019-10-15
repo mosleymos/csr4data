@@ -19,6 +19,13 @@ const app = new App({
 //     }
 // }
 
+window.onload = function(event){
+        // let $about_time = document.getElementById("about_time")
+        // $about_time.style = `
+        //     visibility: hidden;
+        // `;
+
+}
 window.onhashchange = router;
 
 export default app;
