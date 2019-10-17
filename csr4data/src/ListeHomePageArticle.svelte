@@ -1,10 +1,13 @@
 <script>
   import HomePageArticle from './HomePageArticle.svelte'
-  let articles = [
-    { title: "Hello World", descriptif: "developpemeent en svelte javascript c'est cool" },
-    { title: "Ruby", descriptif: "Programmation Ruby en code rapide" },
-    { title: "Rust", descriptif: "Rust for real programmers" }
-  ]
+  import { onMount } from 'svelte'
+  let articles = []
+  const getArticles = async ()=>{
+	  const res = await fetch(`/articles.json`);
+	  articles = await res.json();
+  }
+  onMount(getArticles)
+
 </script>
 
 <h1>Articles</h1>

@@ -8,11 +8,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 const { title, descriptif }  =  article
 
 </script>
+<section>
 <article class="csr-data-article-homepage">
 <h3 class="csr-data-article-title"><center>{ title }<center></h3>
 <h4 class="csr-data-article-court">{descriptif }</h4>
 <a href="#" class="csr-data-en_savoir_plus_btn">En apprendre plus</a>
 </article>
+</section>
 
 <style>
 .csr-data-article-homepage{
