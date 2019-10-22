@@ -9,7 +9,7 @@
              <a href="/#articles" class="csr-data-nav-link">Articles</a>
         </div>
         <div class="menu-nav">
-             <a href="/#about" class="csr-data-nav-link">About</a>
+             <a href="/#about" class="csr-data-nav-link">A propos</a>
         </div>
     </div>
 

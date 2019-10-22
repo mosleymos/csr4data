@@ -6,7 +6,7 @@ const app = new App({
 });
 
 
-window.onload = function(event){ console.log("Chargeement ..") }
-window.onhashchange = router;
+//window.onload = function(event){ console.log("Chargeement ..") }
+//window.onhashchange = router;
 
 export default app;
