@@ -1,4 +1,4 @@
-<img src="csr_data_logo.png" />
+<img src="csr_data_logo.png" alt="logo du site"/>
 <nav>
     <div class="menu" >
 
