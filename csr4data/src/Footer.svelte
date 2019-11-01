@@ -1,5 +1,5 @@
 <div class="csr-data-footer">
-    <a class="csr-data-link">Mentions légales</a>
+    <a href="#" class="csr-data-link">Mentions légales</a>
 </div>
 
 <style>

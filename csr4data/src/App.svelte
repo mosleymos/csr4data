@@ -3,6 +3,7 @@
     import HomePageArticle from './HomePageArticle.svelte';
     import Footer from './Footer.svelte';
     import About from './About.svelte';
+    import Edit from './Edit.svelte';
     import Accueil from './Accueil.svelte';
     import ListeHomePageArticles from './ListeHomePageArticle.svelte';
 
@@ -17,7 +18,7 @@
 <svelte:window on:hashchange={handleHashChange}/>
 
 <Header/>
-{#if show == null}
+{#if show == null || show == ""}
   <Accueil/>
 {/if}
 {#if show == "#articles"}
@@ -29,5 +30,8 @@
 <div id="about_time">
   <About/>
 </div>
+{/if}
+{#if show == "#edit"}
+    <Edit/>
 {/if}
 <Footer/>

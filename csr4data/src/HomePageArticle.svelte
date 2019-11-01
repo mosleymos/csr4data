@@ -12,7 +12,7 @@ const { title, descriptif }  =  article
 <article class="csr-data-article-homepage">
 <h3 class="csr-data-article-title"><center>{ title }<center></h3>
 <h4 class="csr-data-article-court">{descriptif }</h4>
-<a href="#" class="csr-data-en_savoir_plus_btn">En apprendre plus</a>
+<a href="#edit" class="csr-data-en_savoir_plus_btn">En apprendre plus</a>
 </article>
 </section>
 
